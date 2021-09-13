@@ -28,4 +28,22 @@ public class LinkedList {
 			}
 		return isadded;
 		}
+	//pushing data of linked list
+		public void push(int data)
+		{
+			Node newNode =new Node(data);
+			newNode.next = head;
+			head = newNode;
+		}
+		//printing linked list
+		public void print() {
+			Node temp =head;
+			System.out.println("'linked list :");
+			while (temp.next!=null) {
+				System.out.print(temp.data+" -> ");
+				temp = temp.next;
+			}
+			System.out.println(temp.data + "-->null");
+		}
+
 }
