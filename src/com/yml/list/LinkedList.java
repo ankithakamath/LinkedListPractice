@@ -97,4 +97,15 @@ public class LinkedList {
 				prev.next = newNode;
 			}
 		}
+		//deleting at front
+		public void deleteHead() {
+			Node temp = head;
+			if (head == null) {
+				System.out.println("No node to delete");
+			} else {
+				head = head.next;
+				temp = null;
+			}
+		}
+
 }
