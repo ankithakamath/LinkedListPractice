@@ -1,5 +1,7 @@
 package com.yml.list;
 
+import com.yml.list.*;
+
 public class LinkedList {
 
 	private Node head;
@@ -121,4 +123,19 @@ public class LinkedList {
 				System.out.println("Data from the tail is deleted");
 				cur.next = null;
 
-}}
+}
+		//searching the key
+		public Node find(int key) {
+			Node tempNode = head;
+			int count = 0;
+			while (tempNode != null) {
+				count++;
+				if (tempNode.data==key) {
+					System.out.println(key + "is at " + count + "th position");
+					return tempNode;
+				}
+				tempNode = tempNode.next;
+
+			}
+			return null;
+		}}
