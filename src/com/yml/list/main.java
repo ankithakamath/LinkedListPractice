@@ -20,6 +20,8 @@ linkedlist.print();
  linkedlist.insertAfter(30, 40);
  linkedlist.print();
  
+ linkedlist.deletenode(40);
+ linkedlist.print();
 	}
 
 }
