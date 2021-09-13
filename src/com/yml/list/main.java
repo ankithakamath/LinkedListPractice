@@ -6,12 +6,13 @@ public class main {
 		// TODO Auto-generated method stub
 LinkedList linkedlist = new LinkedList();
 linkedlist.add(56);
-linkedlist.add(30);
+
 linkedlist.add(70);
 //linkedlist.push(30);
 linkedlist.print();
-linkedlist.addhead(30);
 
+ linkedlist.insertAtpos(2,30);
+ linkedlist.print();
 	}
 
 }
