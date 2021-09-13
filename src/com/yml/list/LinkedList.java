@@ -107,5 +107,18 @@ public class LinkedList {
 				temp = null;
 			}
 		}
+		//deleting at tail
+		public void deleteTail() {
+			Node temp = head;
+			Node cur = temp;
+			if (head == null) {
+				System.out.println("Deletion not possible");
+				return;
+			} while(temp.next != null) {
+					cur = temp;
+					temp = temp.next;
+				}
+				System.out.println("Data from the tail is deleted");
+				cur.next = null;
 
-}
+}}
