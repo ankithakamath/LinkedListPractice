@@ -14,8 +14,9 @@ linkedlist.print();
  linkedlist.insertAtpos(2,30);
  linkedlist.print();
  
- linkedlist.deleteTail();
- linkedlist.print();
+ 
+ 
+ linkedlist.find(30);
  
  
 	}
