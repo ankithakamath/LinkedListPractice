@@ -51,4 +51,50 @@ public class LinkedList {
 			newNode.next = head;
 			head = newNode;
 
-}}
+}
+		//inserting in the end
+		public boolean addtail(final int data) {
+			boolean isAdded = false;
+
+			Node newNode = new Node(data);
+
+			if (head == null) {
+				head = newNode;
+				isAdded = true;
+
+			} else {
+				Node temp = head;
+
+				while (temp.next != null) {
+					temp = temp.next;
+				}
+				temp.next = newNode;
+				isAdded = true;
+			}
+			return isAdded;
+		}
+
+
+		//inserting at position pos
+		public void insertAtpos(int pos,int data) {
+			if(pos<1) {
+				System.out.println("Invalid pos");
+				return;
+			}
+			if (pos == 1) {
+				addhead(data);
+			} else {
+				int count = 1;
+				Node newNode = new Node(data);
+				Node cur = head;
+				Node prev = null;
+				while (count < pos) {
+					prev = cur;
+					cur = cur.next;
+					count++;
+				}
+				newNode.next = cur;
+				prev.next = newNode;
+			}
+		}
+}
