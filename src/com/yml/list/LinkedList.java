@@ -45,5 +45,10 @@ public class LinkedList {
 			}
 			System.out.println(temp.data + "-->null");
 		}
+		//inserting in the front
+		public void addhead(int data) {
+			Node newNode = new Node(data);
+			newNode.next = head;
+			head = newNode;
 
-}
+}}
