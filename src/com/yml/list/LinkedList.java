@@ -138,4 +138,13 @@ public class LinkedList {
 
 			}
 			return null;
-		}}
+		}
+		//insert after the position having key
+		public void insertAfter(int key, int data) {
+			Node newNode = new Node(data);
+			Node temp = find(key);
+			Node next = temp.next;
+			temp.next = newNode;
+			newNode.next = next;
+		}
+}

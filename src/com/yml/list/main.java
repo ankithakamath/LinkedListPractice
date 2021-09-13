@@ -17,7 +17,8 @@ linkedlist.print();
  
  
  linkedlist.find(30);
- 
+ linkedlist.insertAfter(30, 40);
+ linkedlist.print();
  
 	}
 
